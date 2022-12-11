@@ -10,6 +10,7 @@ import {
 
 /* pages */
 import MainPage from 'pages/MainPage';
+import { HiiragiRW01Page } from 'pages/HiiragiRW/HiiragiRW01Page';
 
 /* css */
 import './App.css';
@@ -19,6 +20,7 @@ export const App = (): ReactElement => {
     <Router>
       <Switch>
         <Route path="/" component={MainPage} exact />
+        <Route path="/hiiragi/stalist/rw01" component={HiiragiRW01Page} exact />
       </Switch>
     </Router>
   );
