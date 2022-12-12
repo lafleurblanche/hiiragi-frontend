@@ -48,6 +48,14 @@ export const HiiragiRWListItems = () => {
               <ListItemText primary="RW01" />
             </ListItemButton>
           </ListItemsLink>
+          <ListItemsLink href="/hiiragi/stalist/rw02">
+            <ListItemButton sx={{ pl: 4 }}>
+              <ListItemIcon>
+                <StarBorder />
+              </ListItemIcon>
+              <ListItemText primary="RW02" />
+            </ListItemButton>
+          </ListItemsLink>
         </List>
       </Collapse>
     </React.Fragment>
