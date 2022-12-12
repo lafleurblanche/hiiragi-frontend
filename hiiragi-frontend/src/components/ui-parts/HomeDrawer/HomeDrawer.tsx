@@ -16,6 +16,7 @@ import { Drawer } from "components/ui-elements/Drawer/Drawer";
 
 /* ui-parts */
 import { HiiragiRWListItems } from "components/ui-parts/HiiragiRWListItems/HiiragiRWListItems";
+import { MainMenuListItems } from "components/ui-parts/MainMenuListItems/MainMenuListItems";
 
 export default function HomeDrawer() {
   const [open, setOpen] = useRecoilState(drawerOpenAtom);
@@ -38,6 +39,7 @@ export default function HomeDrawer() {
       </Toolbar>
       <Divider />
       <List component="nav">
+        <MainMenuListItems />
         <HiiragiRWListItems />
       </List>
     </Drawer>
