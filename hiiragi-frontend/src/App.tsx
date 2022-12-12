@@ -3,9 +3,8 @@ import { ReactElement } from 'react';
 
 /* react-router-dom */
 import {
-  BrowserRouter as Router,
   Route,
-  Switch
+  Routes
 } from 'react-router-dom';
 
 /* pages */
@@ -17,11 +16,9 @@ import './App.css';
 
 export const App = (): ReactElement => {
   return (
-    <Router>
-      <Switch>
-        <Route path="/" component={MainPage} exact />
-        <Route path="/hiiragi/stalist/rw01" component={HiiragiRW01Page} exact />
-      </Switch>
-    </Router>
+    <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/hiiragi/stalist/rw01" element={<HiiragiRW01Page />} />
+    </Routes>
   );
 };
