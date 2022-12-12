@@ -17,9 +17,9 @@ import reportWebVitals from 'reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-  <RecoilRoot>
-    <CssBaseline />
-    <App />
+    <RecoilRoot>
+      <CssBaseline />
+      <App />
     </RecoilRoot>
   </BrowserRouter>,
   document.getElementById('root')
